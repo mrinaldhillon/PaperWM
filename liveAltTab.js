@@ -1,4 +1,5 @@
 import Clutter from 'gi://Clutter';
+import Cogl from 'gi://Cogl';
 import Meta from 'gi://Meta';
 import Gio from 'gi://Gio';
 import GObject from 'gi://GObject';
@@ -66,7 +67,7 @@ export const LiveAltTab = GObject.registerClass(
             let fog = new Clutter.Actor({
                 x: workArea.x, y: workArea.y,
                 width: workArea.width, height: workArea.height,
-                opacity: 0, background_color: Clutter.color_from_string("black")[1],
+                opacity: 0, background_color: Cogl.color_from_string("black")[1],
             });
 
             // this.blur = new Clutter.BlurEffect();

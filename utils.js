@@ -156,7 +156,7 @@ export function toggleCloneMarks() {
         if (metaWindow.clone) {
             metaWindow.clone.opacity = 190;
             metaWindow.clone.__oldOpacity = 190;
-            metaWindow.clone.background_color = Clutter.color_from_string("red")[1];
+            metaWindow.clone.background_color = Cogl.color_from_string("red")[1];
         }
     }
     function unmarkCloneOf(metaWindow) {

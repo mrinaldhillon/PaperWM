@@ -1,4 +1,5 @@
 import Clutter from 'gi://Clutter';
+import Cogl from 'gi://Cogl';
 import GDesktopEnums from 'gi://GDesktopEnums';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -1696,7 +1697,7 @@ border-radius: ${borderWidth}px;
 
         // after creating new background apply this space's color
         if (this.color) {
-            this.metaBackground.set_color(Clutter.color_from_string(this.color)[1]);
+            this.metaBackground.set_color(Cogl.color_from_string(this.color)[1]);
         }
     }
 
